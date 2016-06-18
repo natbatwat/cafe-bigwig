@@ -12,15 +12,28 @@ class Project extends Component {
     return (
       <View style={styles.container}>
       
+        
+        
         <Image source={require('./img/items/kopi.png')} style={styles.itemThumbnail} />
-        
-        <Text style={styles.instructions}>
-          To get started, edit index.ios.js
+        <Text style={styles.itemTitle}>
+          Kopi
         </Text>
-        
-        <Text style={styles.instructions}>
-          Press Cmd+R to reload,{'\n'}
-          Cmd+D or shake for dev menu
+        <Text style={styles.itemDescription}>
+          1 floof / second
+        </Text>
+        <Image source={require('./img/items/softboiledeggs.png')} style={styles.itemThumbnail} />
+        <Text style={styles.itemTitle}>
+          Soft Boiled Eggs
+        </Text>
+        <Text style={styles.itemDescription}>
+          1 floof / second
+        </Text>
+        <Image source={require('./img/items/kayatoast.png')} style={styles.itemThumbnail} />
+        <Text style={styles.itemTitle}>
+          Kaya Toast
+        </Text>
+        <Text style={styles.itemDescription}>
+          2 floof / second
         </Text>
         
       </View>
@@ -32,17 +45,23 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',
-    alignItems: 'center',
+    alignItems: 'flex-start',
     backgroundColor: '#F5FCFF',
+    padding: 20,
   },
   itemThumbnail: {
-    width: 50,
-    height: 50,
+    width: 60,
+    height: 60,
   },
-  instructions: {
-    textAlign: 'center',
+  itemTitle: {
     color: '#333333',
     marginBottom: 5,
+    textAlign: 'left',
+  },
+  itemDescription: {
+    color: '#333333',
+    marginBottom: 5,
+    textAlign: 'left',
   },
 });
 
