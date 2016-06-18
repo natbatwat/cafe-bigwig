@@ -1,15 +1,11 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- */
-
 import React, {
   AppRegistry,
   Component,
   StyleSheet,
   Text,
-  View,
   ListView,
+  Image,
+  View
 } from 'react-native';
 
 var testData = [{"firstName":"Black","lastName":"Garrett"},
@@ -129,6 +125,8 @@ class Project extends Component {
         <View style={styles.bottomcontainer}>
           <ListViewRowsAndSections/>
         </View>
+      
+        <Image source={require('./img/items/kopi.png')} style={styles.itemThumbnail} />
       </View>
     );
   }
@@ -141,10 +139,9 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     backgroundColor: '#F5FCFF',
   },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
+  itemThumbnail: {
+    width: 50,
+    height: 50,
   },
   instructions: {
     textAlign: 'center',
